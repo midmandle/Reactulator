@@ -1,10 +1,11 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import React from "react";
+import Calculator from "../src/components/calculator";
 
 describe("calculator", () => {
     it("should render", () => {
-        const { getByTestId } = render(<Calculator/>);
-        const calculatorRoot = getByTestId("[data-test-id='calculatorRoot']");
-        expect(calculatorRoot).toBeInTheDocument();
+        render(<Calculator/>);
+        const calculatorRoot = screen.getByTestId("calculatorRoot");
+        expect(calculatorRoot).toBeTruthy();
     })
 })
