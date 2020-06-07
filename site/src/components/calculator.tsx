@@ -21,6 +21,8 @@ const Calculator = () => {
             <button data-testid="numberSixButton" onClick={handleOnClickDigitButton}>6</button>
             <button data-testid="numberSevenButton" onClick={handleOnClickDigitButton}>7</button>
             <button data-testid="numberEightButton" onClick={handleOnClickDigitButton}>8</button>        
+            <button data-testid="numberNineButton" onClick={handleOnClickDigitButton}>9</button>        
+        
         </div>
     );
 };
