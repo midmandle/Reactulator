@@ -40,4 +40,9 @@ describe("Calculator", () => {
         userEvent.click(numberFiveButton);
         expect(mockCalculatorDisplayConstructor).toHaveBeenCalledWith({displayText: "5"},{});
     });
+    it("should display '6' when clicking '6'", () => {
+        const numberSixButton = screen.getByTestId("numberSixButton");
+        userEvent.click(numberSixButton);
+        expect(mockCalculatorDisplayConstructor).toHaveBeenCalledWith({displayText: "6"},{});
+    });
 });
