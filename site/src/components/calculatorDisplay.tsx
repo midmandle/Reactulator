@@ -1,6 +1,6 @@
 import React from 'react';
 interface Props {
-    calculation: string;
+    displayText: string;
 }
 const CalculatorDisplay: React.FC<Props> = ({displayText}: Props) => {
     throw new Error("Not implemented");
