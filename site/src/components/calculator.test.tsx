@@ -15,6 +15,11 @@ describe("Calculator", () => {
         const calculatorRoot = screen.getByTestId("calculatorRoot");
         expect(calculatorRoot).toBeInTheDocument();
     });
+    it("should display '0' when clicking '0'", () => {
+        const numberZeroButton = screen.getByTestId("numberZeroButton");
+        userEvent.click(numberZeroButton);
+        expect(mockCalculatorDisplayConstructor).toHaveBeenCalledWith({displayText: "0"},{});
+    });
     it("should display '1' when clicking '1'", () => {
         const numberOneButton = screen.getByTestId("numberOneButton");
         userEvent.click(numberOneButton);
