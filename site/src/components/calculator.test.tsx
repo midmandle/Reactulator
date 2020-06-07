@@ -29,8 +29,8 @@ describe("Calculator", () => {
         const display = screen.getByTestId("calculatorDisplay");
         expect(display).toHaveTextContent('3');
     });
-    it("should display '4' when clicking '3'", () => {
-        const number4Button = screen.getByTestId("number4Button");
+    it("should display '4' when clicking '4'", () => {
+        const number4Button = screen.getByTestId("numberFourButton");
         userEvent.click(number4Button);
         const display = screen.getByTestId("calculatorDisplay");
         expect(display).toHaveTextContent('4');
