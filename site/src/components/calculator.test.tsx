@@ -23,4 +23,10 @@ describe("Calculator", () => {
         const display = screen.getByTestId("calculatorDisplay");
         expect(display).toHaveTextContent('2');
     });
+    it("should display '3' when clicking '3'", () => {
+        const number3Button = screen.getByTestId("numberThreeButton");
+        userEvent.click(number3Button);
+        const display = screen.getByTestId("calculatorDisplay");
+        expect(display).toHaveTextContent('3');
+    });
 });
