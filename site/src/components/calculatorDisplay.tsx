@@ -3,10 +3,6 @@ interface Props {
     calculation: string;
 }
 const CalculatorDisplay: React.FC<Props> = ({displayText}: Props) => {
-    return (
-        <div data-testid="calculatorDisplay">
-            {displayText}
-        </div>
-    )
+    throw new Error("Not implemented");
 }
 export default CalculatorDisplay;
