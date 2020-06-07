@@ -14,6 +14,7 @@ const Calculator = () => {
         <div data-testid="calculatorRoot">
             <CalculatorDisplay displayText={calculation}></CalculatorDisplay>
             <button data-testid="numberOneButton" onClick={handleOnClickDigitButton}>1</button>
+            <button data-testid="numberTwoButton" onClick={handleOnClickDigitButton}>2</button>
         </div>
     );
 };

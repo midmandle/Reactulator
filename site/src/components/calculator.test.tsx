@@ -22,5 +22,6 @@ describe("Calculator", () => {
         userEvent.click(number2Button);
         const display = screen.getByTestId("calculatorDisplay");
         expect(display).toHaveTextContent('2');
+        console.log();
     });
 });
